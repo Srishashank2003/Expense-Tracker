@@ -16,13 +16,13 @@ First Install node modules:
  cd ..
 ```
 
-Run front and backend
+To Run frontend and backend simultaneously:
 
 ```shell
 npm run dev
 ```
 
-#### To run both separately:
+#### To run frontend and Backend separately:
 
 To run Backend:
 
@@ -43,4 +43,4 @@ cd client
 npm run build
 ```
 
-Done! Now the expense Tracker is at your service.
+Done! Now the Expense Tracker is at your service.
