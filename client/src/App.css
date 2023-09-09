@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 :root {
-  --box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16), 0 1px 8px rgba(0, 0, 0, 0.24);
+  --box-shadow1: 0 3px 10px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.36);
 }
 
 * {
@@ -63,6 +64,13 @@ h4 {
   margin: 0;
   text-transform: uppercase;
 }
+.sub_head {
+  text-transform: none;
+  text-align: center;
+  margin: 1% 0 0 6%;
+  color: #b7c7c3;
+  font-weight: 100;
+}
 .holder {
   ::-webkit-input-placeholder {
     font-size: 0.9rem !important;
@@ -72,6 +80,8 @@ h4 {
   text-align: center;
   margin-top: 2rem;
   color: #ffffe8;
+  font-size: 950;
+  margin-top: 10px;
 }
 
 .inc-exp-container {
@@ -123,7 +133,7 @@ input[type="number"] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: hsl(262, 56%, 60%);
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -133,6 +143,16 @@ input[type="number"] {
   padding: 10px;
   width: 100%;
   border-radius: 1rem;
+
+  &:hover {
+    background-color: #086751;
+    transition: 0.3s ease-in-out;
+    box-shadow: var(--box-shadow1);
+  }
+  &:active {
+    background-color: #2e7f6c;
+    box-shadow: var(--box-shadow1);
+  }
 }
 
 .history__list {
@@ -169,7 +189,7 @@ input[type="number"] {
   font-size: 1.1rem;
 }
 .input_amount {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.9rem;
   margin: 1.2rem 0 0.5rem 0;
 }

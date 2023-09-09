@@ -1,4 +1,4 @@
-# Expense Tracker (MERN)
+# Wallet Watch-Expense Tracker (MERN)
 
 > Full stack Expense Tracker
 
