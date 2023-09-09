@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.24);
 }
 
 * {
@@ -12,8 +12,14 @@
 }
 
 body {
-  /* background-color: #f7f7f7; */
-  background-image: linear-gradient(to right top, #a12ffc, #0f94c9, #00ba74);
+  background: url("./images/background1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,8 +59,9 @@ h4 {
   margin: 0;
   text-transform: uppercase;
 }
-h2 {
+.title_main {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .inc-exp-container {
@@ -96,7 +103,7 @@ label {
 
 input[type="text"],
 input[type="number"] {
-  border: 1px solid #dedede;
+  border: 1px solid #dedede74;
   border-radius: 1.5rem;
   display: block;
   font-size: 16px;
@@ -132,7 +139,7 @@ input[type="number"] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.926);
   width: 30vw;
 
   display: flex;
@@ -142,6 +149,9 @@ input[type="number"] {
   position: relative;
   padding: 12px 10px 12px 8px;
   margin: 10px 0;
+}
+.li__text {
+  margin: 0 0 0 5px;
 }
 
 li span {
@@ -189,17 +199,13 @@ li span {
     /* height: 200vh; */
   }
 
-  .balance__container {
-    /* background-color: #00ba74; */
-  }
-
   .list li {
     width: 350px;
   }
 }
 @media screen and (min-width: 950px) {
   .container {
-    height: 90vh;
+    height: 40rem;
   }
 
   .list li {
@@ -207,7 +213,8 @@ li span {
   }
 
   .balance__container {
-    background-color: #00ba74;
+    background-color: rgba(79, 181, 177, 0.4);
+    box-shadow: var(--box-shadow);
   }
 }
 
