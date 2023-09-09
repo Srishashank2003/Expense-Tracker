@@ -10,7 +10,7 @@ export const TransactionList = () => {
     getTransactions();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+  transactions.reverse();
   return (
     <div className="history__list">
       <h3>History</h3>

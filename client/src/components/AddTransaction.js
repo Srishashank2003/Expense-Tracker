@@ -15,12 +15,12 @@ export const AddTransaction = () => {
       amount: +amount,
     };
     console.log(text);
-    if (text.length <= 35) {
+    if (text.length <= 24) {
       addTransaction(newTransaction);
       setText("");
       setAmount(0);
     } else {
-      alert("reached char limit");
+      alert("Name Character Exceeded");
     }
   };
 
