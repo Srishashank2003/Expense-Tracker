@@ -13,7 +13,7 @@ export const TransactionList = () => {
   transactions.reverse();
   return (
     <div className="history__list">
-      <h3>History</h3>
+      <h3 className="h3_history">History:</h3>
       <ul className="list">
         {transactions.map((transaction) => (
           <Transaction key={transaction._id} transaction={transaction} />
